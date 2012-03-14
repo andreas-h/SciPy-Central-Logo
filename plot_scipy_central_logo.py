@@ -177,8 +177,8 @@ def plot_arrows(ax):
 
 if __name__ == '__main__':
     fig = plt.figure(figsize=(6, 6))
-    water_color = np.asarray(colors.hex2color(colors.cnames['royalblue']))
-    land_color = 'cornflowerblue'
+    water_color = np.asarray(colors.hex2color('#6487dc'))
+    land_color = np.asarray(colors.hex2color('#8caae6'))
     line_color = water_color * 0.8
     logo_color = 'white'
     logo_alpha = 0.8
@@ -208,6 +208,6 @@ if __name__ == '__main__':
     ax.set_ylim(ax.get_ylim() + padding)
     fig.subplots_adjust(bottom=0, top=1, left=0, right=1)
 
-    plt.savefig('scipy_central_logo.png')
+    plt.savefig('scipy_central_logo.svg')
     #plt.show()
 
